@@ -1,12 +1,16 @@
 <template>
     <div>
-        <h1>crear militante</h1>
+        <formulario></formulario>
+        
     </div>
 </template>
 
 <script>
+import formulario from '@/components/formulario.vue'
 export default {
-
+    components:{
+        formulario
+    }
 }
 </script>
 

@@ -14,7 +14,7 @@
                   v-model="documento"
                   prepend-icon="person"
                 ></v-text-field>
-                <v-btn flat class="primary mx-0 mt-3" @click="buscar">Buscar</v-btn>
+                <v-btn flat round class="primary mx-0 mt-3" @click="buscar">Buscar</v-btn>
               </v-form>
             </v-card-text>
           </v-card>
@@ -28,7 +28,7 @@
       >No se encontro al militante puede registrarlo</v-alert>
 
       <div class="text-xs-center pa-3">
-        <v-btn v-if="alert" color="primary" dark @click="alert = false" router to="/registrar">Registrar</v-btn>
+        <v-btn round v-if="alert" color="primary" dark @click="alert = false" router to="/registrar">Registrar</v-btn>
       </div>
     </v-container>
   </div>
@@ -36,11 +36,11 @@
 
 <script>
 import militanteServices from "@/services/militanteServices.js";
-import { constants } from 'fs';
+
 export default {
   data() {
     return {
-      alert: true,
+      alert: false,
       documento: "",
       link: "/",
       militante: {

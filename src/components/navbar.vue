@@ -2,7 +2,11 @@
   <nav>
     <v-toolbar flat app dark color="primary">
       <v-toolbar-title >
-        <span class="font-weight-light">Consulta Militantes </span>
+        <v-btn flat icon router to="/">
+          <v-icon x-large >home</v-icon>
+        </v-btn>
+        
+        <span class="font-weight-light">  Consulta Militantes </span>
         <span> MAS - IPSP</span>     
       </v-toolbar-title>
       <v-spacer></v-spacer>
